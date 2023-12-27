@@ -20,7 +20,8 @@ def main():
         print("\nerror: KNN traning was not successful\n")  # show error message
         return  # and exit program
 
-    imgOriginalScene = cv2.imread("1.png")  # open image
+    #insert images in the 'Data Samples' directory
+    imgOriginalScene = cv2.imread("../Data Samples/1.png")  # open image
 
     if imgOriginalScene is None:  # if image was not read successfully
         print("\nerror: image not read from file \n\n")  # print error message to std out
